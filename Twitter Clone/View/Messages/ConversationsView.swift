@@ -16,7 +16,6 @@ struct ConversationsView: View {
         ZStack(alignment: .bottomTrailing) {
             NavigationLink(destination: ChatView(), isActive: $startNewChat, label: {})
             
-            
             ScrollView {
                 ForEach(0..<10) { _ in
                     NavigationLink(
@@ -42,7 +41,12 @@ struct ConversationsView: View {
             .clipShape(Circle())
             .padding()
             .sheet(isPresented: $isShowingNewMessageView) {
-                NewMessageView(isPresented: $isShowingNewMessageView, startNewChat: $startNewChat)
+                NewMessageView(
+                    viewModel: NewMessageViewModel(
+                        isPresented: $isShowingNewMessageView,
+                        startNewChat: $startNewChat
+                    )
+                )
             }
         }
     }
