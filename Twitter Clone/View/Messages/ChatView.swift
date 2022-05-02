@@ -15,23 +15,17 @@ struct ChatView: View {
         VStack {
             ScrollView {
                 VStack {
-                    ForEach(0..<15) { _ in
-                        HStack {
-                            Spacer()
-                            Text("Test message text")
-                                .padding()
-                                .background(.blue)
-                                .foregroundColor(.white)
-                                .clipShape(ChatBubble(isFromCurrentUser: true))
-                                .padding(.horizontal)
-                        }
+                    ForEach(MOCK_MESSAGES) { message in
+                        MessageView(message: message)
                     }
                 }
             }
+            .padding(.top)
             
             MessageInputView(messageText: $messageText)
                 .padding()
         }
+       
     }
 }
 
@@ -39,4 +33,4 @@ struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         ChatView()
     }
-}
+}  

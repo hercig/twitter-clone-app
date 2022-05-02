@@ -21,6 +21,9 @@
 		4EBF3918281FCE1F00BA0864 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF3917281FCE1F00BA0864 /* MessageInputView.swift */; };
 		4EBF391A281FCEDE00BA0864 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF3919281FCEDE00BA0864 /* ChatView.swift */; };
 		4EBF391C281FE64E00BA0864 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF391B281FE64E00BA0864 /* ChatBubble.swift */; };
+		4EBF391E281FE9DE00BA0864 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF391D281FE9DE00BA0864 /* Message.swift */; };
+		4EBF3920281FEDB700BA0864 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF391F281FEDB700BA0864 /* MessageView.swift */; };
+		4EBF3922281FEF5D00BA0864 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF3921281FEF5D00BA0864 /* NewMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		4EBF3917281FCE1F00BA0864 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		4EBF3919281FCEDE00BA0864 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		4EBF391B281FE64E00BA0864 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		4EBF391D281FE9DE00BA0864 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4EBF391F281FEDB700BA0864 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		4EBF3921281FEF5D00BA0864 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +77,10 @@
 		4E2F40182818168000701868 /* Twitter Clone */ = {
 			isa = PBXGroup;
 			children = (
-				4EBF3910281FBBEF00BA0864 /* ViewModel */,
-				4E2F40192818168000701868 /* Twitter_CloneApp.swift */,
-				4E2F4029281816BB00701868 /* View */,
 				4E2F4028281816B500701868 /* Model */,
+				4EBF3910281FBBEF00BA0864 /* ViewModel */,
+				4E2F4029281816BB00701868 /* View */,
+				4E2F40192818168000701868 /* Twitter_CloneApp.swift */,
 				4EBF3911281FBBF700BA0864 /* Resources */,
 				4E2F401F2818168200701868 /* Preview Content */,
 			);
@@ -92,6 +98,7 @@
 		4E2F4028281816B500701868 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4EBF391D281FE9DE00BA0864 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +164,8 @@
 				4EBF3917281FCE1F00BA0864 /* MessageInputView.swift */,
 				4EBF3919281FCEDE00BA0864 /* ChatView.swift */,
 				4EBF391B281FE64E00BA0864 /* ChatBubble.swift */,
+				4EBF391F281FEDB700BA0864 /* MessageView.swift */,
+				4EBF3921281FEF5D00BA0864 /* NewMessageView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -240,8 +249,11 @@
 				4E2F401A2818168000701868 /* Twitter_CloneApp.swift in Sources */,
 				4EBF391C281FE64E00BA0864 /* ChatBubble.swift in Sources */,
 				4E2F402D28181F1800701868 /* TweetCell.swift in Sources */,
+				4EBF3922281FEF5D00BA0864 /* NewMessageView.swift in Sources */,
+				4EBF391E281FE9DE00BA0864 /* Message.swift in Sources */,
 				4EBF390D281FB5F600BA0864 /* SearchBar.swift in Sources */,
 				4EBF390F281FB8C800BA0864 /* UserCell.swift in Sources */,
+				4EBF3920281FEDB700BA0864 /* MessageView.swift in Sources */,
 				4EBF3916281FC4FC00BA0864 /* ConversationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

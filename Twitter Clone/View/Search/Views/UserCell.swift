@@ -23,6 +23,7 @@ struct UserCell: View {
                 Text("Peter Parker")
                     .font(.system(size: 16))
             }
+            .foregroundColor(.black)
             
             Spacer()
         }
