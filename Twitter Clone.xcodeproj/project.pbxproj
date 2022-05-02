@@ -56,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				4E2F40192818168000701868 /* Twitter_CloneApp.swift */,
-				4E2F4027281816B400701868 /* New Group */,
+				4E2F4029281816BB00701868 /* Views */,
+				4E2F4028281816B500701868 /* Models */,
 				4E2F401D2818168200701868 /* Assets.xcassets */,
 				4E2F401F2818168200701868 /* Preview Content */,
 			);
@@ -71,30 +72,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4E2F4027281816B400701868 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				4E2F4029281816BB00701868 /* Views */,
-				4E2F4028281816B500701868 /* ViewModels */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		4E2F4028281816B500701868 /* ViewModels */ = {
+		4E2F4028281816B500701868 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4E2F4029281816BB00701868 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4EBF3907281FB39B00BA0864 /* Feed */,
 				4E2F401B2818168000701868 /* ContentView.swift */,
-				4E2F402A28181B8600701868 /* FeedView.swift */,
-				4E2F402C28181F1800701868 /* TweetCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4EBF3907281FB39B00BA0864 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				4E2F402C28181F1800701868 /* TweetCell.swift */,
+				4E2F402A28181B8600701868 /* FeedView.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
