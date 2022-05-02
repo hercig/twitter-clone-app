@@ -9,14 +9,14 @@ import SwiftUI
 
 struct TweetCell: View {
     var body: some View {
-        VStack {
-            HStack(alignment: .top) {
+        VStack(alignment: .leading) {
+            HStack(alignment: .top, spacing: 12) {
                 Image("batman")
                     .resizable()
                     .scaledToFit()
                     .clipped()
                     .frame(width: 56, height: 56)
-                    .cornerRadius(28)
+                    .clipShape(Circle())
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
@@ -28,6 +28,7 @@ struct TweetCell: View {
                             .foregroundColor(.gray)
                     }
                     Text("I prudcude dope products like Tesla, space rockets and hyperloops becasue I have a ton of money.")
+                        .font(.system(size: 14))
                 }
             }
             .padding(.bottom)
