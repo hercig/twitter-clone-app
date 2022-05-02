@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct ProfileActionButtonsView: View {
+    
+    let isCurrentUser: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if isCurrentUser {
+            Button(action: {}) {
+                Text("Edit profile")
+                    .frame(width: 360, height: 40)
+                    .background(.blue)
+                    .foregroundColor(.white)
+            }
+            .cornerRadius(20)
+        } else {
+            HStack {
+                Button(action: {}) {
+                    Text("Follow")
+                        .frame(width: 180, height: 40)
+                        .background(.blue)
+                        .foregroundColor(.white)
+                }
+                .cornerRadius(20)
+                
+                Button(action: {}) {
+                    Text("Message")
+                        .frame(width: 180, height: 40)
+                        .background(.purple)
+                        .foregroundColor(.white)
+                }
+                .cornerRadius(20)
+            }
+        }
     }
 }
 
 struct ProfileActionButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileActionButtonsView()
+        ProfileActionButtonsView(isCurrentUser: false)
     }
 }

@@ -16,10 +16,11 @@ struct ProfileHeaderView: View {
                 .clipped()
                 .frame(width: 120, height: 120)
                 .clipShape(Circle())
-                .shadow(color: .black, radius: 10, x: 0, y: 0)
+                .shadow(color: .black, radius: 6, x: 0, y: 0)
             
             Text("Bruce Wayne")
                 .font(.headline)
+                .padding(.top)
             
             Text("@batman")
                 .font(.subheadline)
@@ -44,6 +45,9 @@ struct ProfileHeaderView: View {
                 }
             }
             .padding()
+            
+            ProfileActionButtonsView(isCurrentUser: true)
+                .padding()
             
             Spacer()
         }
