@@ -16,7 +16,7 @@ struct ConversationsView: View {
             ScrollView {
                 ForEach(0..<10) { _ in
                     NavigationLink(
-                        destination: Text("Hello"),
+                        destination: ChatView(),
                         label: {
                             ConversationCell()
                                 .padding()
