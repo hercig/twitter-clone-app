@@ -19,14 +19,15 @@ struct FeedView: View {
             
             Button(action: {}) {
                 Image(systemName: "plus")
+                    .resizable()
+                    .scaledToFit()
                     .frame(width: 32, height: 32)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .clipShape(Circle())
             }
+            .background(Color(.systemBlue))
+            .foregroundColor(.white)
+            .clipShape(Circle())
             .padding()
-            
         }
     }
 }
