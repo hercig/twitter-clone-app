@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    
+    @State var selectedFilter: TweetFilterOptions = .tweets
+    
     var body: some View {
         ScrollView {
             VStack {
                 ProfileHeaderView()
+                FilterButtonView(selectedOption: $selectedFilter)
             }
             .padding(.top)
             
